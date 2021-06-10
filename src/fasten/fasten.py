@@ -9,7 +9,13 @@ BASE_URL = "https://api.fasten-project.eu/api/"
 
 
 class FastenPackage:
-    def get_pkg_metadata(self, forge: str, pkg_name: str, pkg_version: str) -> Any:
+    def __init__(self, url: str, forge: str, pkg_name: str, pkg_version: str):
+        self.url = url
+        self.forge = forge
+        self.pkg_name = pkg_name
+        self.pkg_version = pkg_version
+
+    def get_pkg_metadata(self) -> Any:
         """
         Requests the package metadata from FASTEN's RESTAPI
 
@@ -18,14 +24,15 @@ class FastenPackage:
             pkg_name (str): Package name
             pkg_version (str): Package version
         """
-        if pkg_version is None:
-            pkg_version = self.get_pkg_version(forge, pkg_name)
-            logger.debug("package version: %s", pkg_version)
+        if self.pkg_version is None:
+            self.pkg_version = self.get_pkg_version(self.forge, self.pkg_name)
+            logger.debug("package version: %s", self.pkg_version)
 
         logger.info(
-            "Retrieving metadata for: %s/%s/%s...", forge, pkg_name, pkg_version
+            "Retrieving metadata for: %s/%s/%s...", self.forge, self.pkg_name, self.pkg_version
         )
-        url = f"{BASE_URL}{forge}/packages/{pkg_name}/{pkg_version}"
+        url = f"{self.url}/{self.forge}/packages/{self.pkg_name}/{self.pkg_version}"
+        print(url)
         logger.debug(url)
 
         res = requests.get(url)
