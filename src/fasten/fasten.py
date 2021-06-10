@@ -55,7 +55,7 @@ class FastenPackage:
         # TODO: implement a way to get the latest version of a package from the RESTAPI
         return version
 
-    def get_pkglist_metadata(self) -> List[Dict[str, str]]:
+    def get_pkglist_metadata(self, pkgs_list) -> List[Dict[str, str]]:
         # get a list from requirements.txt
         pkgs_list = [
             {
