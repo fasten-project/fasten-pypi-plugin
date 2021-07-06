@@ -1,6 +1,7 @@
 import sys
 from readRequirementsFile import ReadRequirementsFile
 from createCallGraph import CreateCallGraph
+from sendPackages import SendPackages
 from fasten import FastenPackage
 
 
@@ -15,13 +16,14 @@ class Main:
     pkg_name = "fasten-pypi-plugin" # Package containing the code to be analyzed
     version = "1.0" # Version of the product
     timestamp = "42" # Timestamp of the package's version
-    pathToFile = 'fasten-pypi-plugin/requirements.txt'
+    pathToFile = '../../requirements.txt' # 'fasten-pypi-plugin/requirements.txt'
     packages = ReadRequirementsFile(pathToFile)
-    packages.readFile() # read requirements.txt
+    pkgs= packages.readFile() # read requirements.txt
 #    package = FastenPackage(url, forge, pkg_name, pkg_version)
-
 #    result = package.get_pkg_metadata()
 #    print(result)
+    SendPackages.sendPackages(pkgs)
+
 
     print("Create Call Graph for current project")
 
