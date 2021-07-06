@@ -22,7 +22,7 @@ class Main:
 #    package = FastenPackage(url, forge, pkg_name, pkg_version)
 #    result = package.get_pkg_metadata()
 #    print(result)
-    SendPackages.sendPackages(pkgs)
+    SendPackages.sendPackages(pkgs, url)
 
 
     print("Create Call Graph for current project")
