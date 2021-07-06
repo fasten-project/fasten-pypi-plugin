@@ -10,16 +10,12 @@ class ReadRequirementsFile:
 
         with open(self.pathToFile, "r") as requirements:
 
-            pkgs_list = ""
+            pkgs = { }
             for x in requirements:
                 name = "".join(re.findall(r".+(?===)", x))
                 version = "".join(re.findall(r"(?<===).+", x))
-                pkg = {
-                    "name": name,
-                    "version": version,
-                    "forge": "pypi"
-                }
+                pkgs[name] = version
 
-                pkgs_list += json.dumps(pkg) + "\n"
+            pkgs = json.dumps(pkgs)
 
-            print(pkgs_list)
+            return pkgs
