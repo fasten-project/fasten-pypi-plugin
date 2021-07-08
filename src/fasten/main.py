@@ -1,12 +1,16 @@
+import argparse
 import sys
 from readRequirementsFile import ReadRequirementsFile
 from createCallGraph import CreateCallGraph
 from sendPackages import SendPackages
+from stitchCallGraph import StitchCallGraph
 from fasten import FastenPackage
 
 
 class Main:
 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("call_graph", nargs="*",help="Some path")
     url = 'http://127.0.0.1:9002'
 #    forge = sys.argv[1] # mvn
 #    pkg_name = sys.argv[2] # namesss
@@ -22,9 +26,11 @@ class Main:
 #    package = FastenPackage(url, forge, pkg_name, pkg_version)
 #    result = package.get_pkg_metadata()
 #    print(result)
-    SendPackages.sendPackages(pkgs, url)
+    call_graphs = SendPackages.sendPackages(pkgs, url)
+    pathsToCallGraphs = parser.parse_args(call_graphs)
 
-
-    print("Create Call Graph for current project")
+    print(pathsToCallGraphs)
 
     CreateCallGraph().createCallGraph(pkg_name, product, forge, version, timestamp)
+
+    StitchCallGraph().stitchCallGraph(pathsToCallGraphs.call_graph)
