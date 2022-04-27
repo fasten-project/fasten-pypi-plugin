@@ -13,7 +13,6 @@ class StitchCallGraph:
         stitcher = Stitcher(call_graphs)
         stitcher.stitch()
         output = json.dumps(stitcher.output())
-#        print(output)
 
         with open("StitchedCallGraph/" + args.product + ".json", "w+") as f:
             f.write(json.dumps(output))
