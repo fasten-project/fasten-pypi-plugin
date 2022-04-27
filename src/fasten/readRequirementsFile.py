@@ -1,4 +1,4 @@
-# Retrieve package name and version from requirements.txt file
+# Retrieve package name and version from requirements.txt file.
 
 import re
 import json
