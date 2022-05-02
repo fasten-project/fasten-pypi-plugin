@@ -23,11 +23,11 @@ class CreateCallGraph:
         formatter = formats.Fasten(cg, args.pkg_name, args.product, forge, args.version, args.timestamp)
         print("Call Graph formatted.")
 
-        with open("callGraphs/" + args.pkg_name + ".json", "w+") as f:
+        with open(args.cg_path + args.pkg_name + ".json", "w+") as f:
             f.write(json.dumps(formatter.generate()))
 
-        call_graphs.append("callGraphs/" + args.pkg_name + ".json") # Append path to locally created Call Graph to list of paths
+        call_graphs.append(args.cg_path + args.pkg_name + ".json") # Append path to locally created Call Graph to list of paths
 
-        print("Call graph written in file " + "callGraphs/" + args.pkg_name + ".json")
+        print("Call graph written in file " + args.cg_path + args.pkg_name + ".json")
 
         return call_graphs

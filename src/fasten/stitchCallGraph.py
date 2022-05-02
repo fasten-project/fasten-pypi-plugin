@@ -13,10 +13,8 @@ class StitchCallGraph:
         stitcher = Stitcher(call_graphs)
         stitcher.stitch()
         output = json.dumps(stitcher.output())
-        stitched_call_graph = "StitchedCallGraph/" + args.product + ".json"
+        stitched_call_graph = args.scg_path + args.product + ".json"
 
-        with open("StitchedCallGraph/" + args.product + ".json", "w+") as f:
-            f.write(output)
-        print('Saved Stiched Call Graph in: ' + "./StitchedCallGraph/" + args.product)
-
-        return stitched_call_graph
+        with open(args.scg_path + args.product + ".json", "w+") as f:
+            f.write(json.dumps(output))
+        print('Saved Stiched Call Graph in: ' + args.scg_path + args.product)

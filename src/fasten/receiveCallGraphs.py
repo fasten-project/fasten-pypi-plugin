@@ -7,7 +7,7 @@ import requests
 class ReceiveCallGraphs:
 
     @staticmethod
-    def receiveCallGraphs(pkgs, url):
+    def receiveCallGraphs(args, pkgs, url):
 
         print("Read Call Graphs from FASTEN:")
         pkgs = json.loads(pkgs)
@@ -23,10 +23,10 @@ class ReceiveCallGraphs:
                 if response.status_code == 200:
 
                     call_graph = response.json() # save Call Graph as JSON format
-                    with open("callGraphs/" + package + ".json", "w") as f:
+                    with open(args.cg_path + package + ".json", "w") as f:
                         f.write(json.dumps(call_graph)) # save Call Graph in a file
 
-                    call_graphs.append("callGraphs/" + package + ".json") # append Call Graph file location to list
+                    call_graphs.append(args.cg_path + package + ".json") # append Call Graph file location to list
 
                     print(package + ":" + pkgs[package] + ": Call Graph received.")
 
