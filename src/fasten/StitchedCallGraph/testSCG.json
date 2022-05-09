@@ -1,0 +1,39 @@
+{
+    "edges": [
+        [
+            0,
+            1
+        ],
+        [
+            2,
+            3
+        ],
+        [
+            4,
+            2
+        ]
+    ],
+    "nodes": {
+        "0": {
+            "URI": "fasten://pypiPlugin-test-online$1.0/.........build.lib.fasten.__main__/",
+            "metadata": {}
+        },
+        "1": {
+            "URI": "fasten://pypiPlugin-test-online$1.0/.........build.lib.fasten.__main__/main()",
+            "metadata": {}
+        },
+        "2": {
+            "URI": "fasten://pypiPlugin-test-online$1.0/...fasten/FastenPackage.get_pkg_metadata()",
+            "metadata": {"Licenses": "[{"lk":"ljkj"},{"lk":"jkjk":}]",
+                         "Vulnerbilities": "kjlkj"}
+        },
+        "3": {
+            "URI": "fasten://pypiPlugin-test-online$1.0/...fasten/FastenPackage.get_pkg_version()",
+            "metadata": {}
+        },
+        "4": {
+            "URI": "fasten://pypiPlugin-test-online$1.0/...fasten/FastenPackage.get_pkglist_metadata()",
+            "metadata": {}
+        }
+    }
+}
