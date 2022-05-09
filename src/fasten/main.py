@@ -36,4 +36,4 @@ class Main:
 
 #    pathsToCallGraphs = parser.parse_args(call_graphs)
 
-    StitchCallGraph().stitchCallGraph(args, call_graphs)
+    stitched_call_graph = StitchCallGraph().stitchCallGraph(args, call_graphs)
