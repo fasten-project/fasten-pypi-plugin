@@ -1,12 +1,9 @@
 import argparse
-import sys
 from readRequirementsFile import ReadRequirementsFile
 from checkPackageAvailability import CheckPackageAvailability
 from createCallGraph import CreateCallGraph
-from receiveCallGraphs import ReceiveCallGraphs
 from requestFasten import RequestFasten
 from stitchCallGraph import StitchCallGraph
-from fasten import FastenPackage
 
 
 class Main:
