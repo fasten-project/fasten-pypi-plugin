@@ -4,6 +4,8 @@ from checkPackageAvailability import CheckPackageAvailability
 from createCallGraph import CreateCallGraph
 from requestFasten import RequestFasten
 from stitchCallGraph import StitchCallGraph
+from enrichCallGraph import EnrichCallGraph
+from stitchedCallGraphAnalyzer import StitchedCallGraphAnalyzer
 
 
 class Main:
@@ -37,3 +39,5 @@ class Main:
 #    pathsToCallGraphs = parser.parse_args(call_graphs)
 
     stitched_call_graph = StitchCallGraph().stitchCallGraph(args, call_graphs)
+    EnrichCallGraph().enrichCallGraph(pkgs, stitched_call_graph)
+    StitchedCallGraphAnalyzer.analyzeStitchedCallGraph(stitched_call_graph)
