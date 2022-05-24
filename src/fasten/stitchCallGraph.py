@@ -10,7 +10,7 @@ class StitchCallGraph:
 
         print("Stitch Call Graphs")
 
-        stitcher = Stitcher(call_graphs)
+        stitcher = Stitcher(call_graphs, "simple")
         stitcher.stitch()
         output = json.dumps(stitcher.output())
         stitched_call_graph = args.scg_path + args.product + ".json"
