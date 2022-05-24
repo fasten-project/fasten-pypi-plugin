@@ -61,7 +61,7 @@ These steps are optional as the pypi-plugin takes its information from the faste
 
 8. You can also run the pypi-plugin from inside the `fasten-pypi-plugin/src/fasten`-folder for development or testing purposes:
     ```
-    python3 main.py \
+    python3 __main__.py \
             --product fasten-pypi-plugin \
             --pkg_name fasten-pypi-plugin \
             --project_path ./ \
