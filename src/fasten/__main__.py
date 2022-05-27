@@ -1,4 +1,6 @@
 import argparse
+import time
+from fasten.executePypiResolver import ExecutePypiResolver
 from fasten.readRequirementsFile import ReadRequirementsFile
 from fasten.checkPackageAvailability import CheckPackageAvailability
 from fasten.createCallGraph import CreateCallGraph
@@ -34,6 +36,10 @@ def main():
     vulnerabilities = []
 
     CreateDirectories.DirectoryCheck(args.fasten_data, args.scg_path) # Create directories to store the Call Graphs and the Stitched Call Graph
+    DependenciesTree = ExecutePypiResolver.executePypiResolver(args.requirements)
+    time.sleep(20)
+    all_pkgs = ReadRequirementsFile.readFile(DependenciesTree) # Read requirements.txt
+    pkgs, unknown_pkgs = CheckPackageAvailability.checkPackageAvailability(all_pkgs, url) # Check if packages are known by FASTEN
 
     pkgs = ReadRequirementsFile.readFile(args.requirements) # Read requirements.txt
     pkgs, unknown_pkgs = CheckPackageAvailability.checkPackageAvailability(pkgs, url) # Check if packages are known by FASTEN
