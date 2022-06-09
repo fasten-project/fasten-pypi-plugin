@@ -1,0 +1,12 @@
+{
+    "nodes": {
+        "0": {
+            "URI": "fasten://pypiPlugin-test-online$1.0/.........build.lib.fasten.__main__/",
+            "metadata": {}
+        },
+        "1": {
+            "URI": "fasten://pypiPlugin-test-online$1.0/.........build.lib.fasten.__main__/main()",
+            "metadata": {}
+        }
+    }
+}

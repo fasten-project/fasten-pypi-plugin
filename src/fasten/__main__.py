@@ -6,6 +6,7 @@ from fasten.requestFasten import RequestFasten
 from fasten.stitchCallGraphs import StitchCallGraphs
 from fasten.createAdjacencyList import CreateAdjacencyList
 from fasten.depthFirstSearch import DepthFirstSearch
+from fasten.optimizeStitchedCallGraph import OptimizeStitchedCallGraph
 from fasten.enrichCallGraph import EnrichCallGraph
 from fasten.stitchedCallGraphAnalyzer import StitchedCallGraphAnalyzer
 from fasten.createDirectories import CreateDirectories
@@ -48,8 +49,9 @@ def main():
     adjList = CreateAdjacencyList
     adjList.createAdjacencyList(stitched_call_graph)
 
-    DepthFirstSearch.depthFirstSearch(adjList, 0)
+    list_of_nodes = DepthFirstSearch.depthFirstSearch(adjList, 0)
 
+    OptimizeStitchedCallGraph.optimizeStitchedCallGraph(args, stitched_call_graph, list_of_nodes)
 #    StitchedCallGraphAnalyzer.analyzeStitchedCallGraph(stitched_call_graph)
 
     for package in vul_pkgs:

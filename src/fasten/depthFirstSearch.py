@@ -21,6 +21,8 @@ class DepthFirstSearch:
         print(cls.marked)
         print(cls.count)
 
+        return cls.marked
+
     @classmethod
     def dfs(cls, currentNode):
         cls.marked[currentNode] = True
