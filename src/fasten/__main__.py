@@ -4,6 +4,7 @@ from fasten.checkPackageAvailability import CheckPackageAvailability
 from fasten.createCallGraph import CreateCallGraph
 from fasten.requestFasten import RequestFasten
 from fasten.stitchCallGraphs import StitchCallGraphs
+from fasten.findEntrypoints import FindEntrypoints
 from fasten.createAdjacencyList import CreateAdjacencyList
 from fasten.depthFirstSearch import DepthFirstSearch
 from fasten.optimizeStitchedCallGraph import OptimizeStitchedCallGraph
@@ -45,6 +46,7 @@ def main():
 #    pathsToCallGraphs = parser.parse_args(call_graphs)
 
     stitched_call_graph = StitchCallGraphs().stitchCallGraphs(args, call_graphs)
+    entry_points = FindEntrypoints.findEntrypoints(args, stitched_call_graph)
 
     adjList = CreateAdjacencyList
     adjList.createAdjacencyList(stitched_call_graph)
