@@ -1,11 +1,603 @@
 {
     "nodes": {
-        "0": {
-            "URI": "fasten://pypiPlugin-test-online$1.0/.........build.lib.fasten.__main__/",
+        "1300": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.integration.transfer/Transfer_.get.setup()",
             "metadata": {}
         },
-        "1": {
-            "URI": "fasten://pypiPlugin-test-online$1.0/.........build.lib.fasten.__main__/main()",
+        "1301": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.integration.transfer/_support()",
+            "metadata": {}
+        },
+        "1302": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.integration.transfer/Transfer_.put.base_case()",
+            "metadata": {}
+        },
+        "1303": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.integration.connection/Connection_.ssh_connections.close_method_closes_connection()",
+            "metadata": {}
+        },
+        "1304": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.integration.connection/Connection_.ssh_connections.open_method_generates_real_connection()",
+            "metadata": {}
+        },
+        "1305": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.integration.connection/Connection_.sudo.sudo_command()",
+            "metadata": {}
+        },
+        "1306": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.integration.connection/skip_outside_travis()",
+            "metadata": {}
+        },
+        "1307": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.integration.connection/Connection_.sudo.mixed_sudo_and_normal_commands()",
+            "metadata": {}
+        },
+        "1308": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.task/task_.hosts_kwarg.values_may_be_connection_first_posarg_strings()",
+            "metadata": {}
+        },
+        "1309": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.task/task_.hosts_kwarg._run()",
+            "metadata": {}
+        },
+        "1310": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.task/task_.hosts_kwarg.values_may_be_Connection_constructor_kwarg_dicts()",
+            "metadata": {}
+        },
+        "1311": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.task/task_.hosts_kwarg.values_may_be_mixed()",
+            "metadata": {}
+        },
+        "1312": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.transfer/Transfer_.get.file_like_local_paths.remote_path_to_local_StringIO()",
+            "metadata": {}
+        },
+        "1313": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.transfer/Transfer_.get.file_like_local_paths._get_to_stringio()",
+            "metadata": {}
+        },
+        "1314": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.transfer/Transfer_.get.file_like_local_paths.result_contains_fd_for_local_path()",
+            "metadata": {}
+        },
+        "1315": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.transfer/Transfer_.put.file_like_local_paths.remote_path_from_local_StringIO()",
+            "metadata": {}
+        },
+        "1316": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.transfer/Transfer_.put.file_like_local_paths._put_from_stringio()",
+            "metadata": {}
+        },
+        "1317": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.transfer/Transfer_.put.file_like_local_paths.result_contains_fd_for_local_path()",
+            "metadata": {}
+        },
+        "1318": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests._util/load()",
+            "metadata": {}
+        },
+        "1319": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests._util/support_path()",
+            "metadata": {}
+        },
+        "1320": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/_execute()",
+            "metadata": {}
+        },
+        "1321": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/_get_executor()",
+            "metadata": {}
+        },
+        "1322": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.hosts_flag_empty.no_parameterization_is_done()",
+            "metadata": {}
+        },
+        "1323": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.hosts_flag_set.parameterization_per_host()",
+            "metadata": {}
+        },
+        "1324": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.hosts_flag_set.post_tasks_happen_once_only()",
+            "metadata": {}
+        },
+        "1325": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.hosts_attribute_on_task_objects.parameterization_per_host()",
+            "metadata": {}
+        },
+        "1326": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.hosts_attribute_on_task_objects.post_tasks_happen_once_only()",
+            "metadata": {}
+        },
+        "1327": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.hosts_attribute_on_task_objects.may_give_Connection_kwargs_as_values()",
+            "metadata": {}
+        },
+        "1328": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.hosts_flag_vs_attributes.flag_wins()",
+            "metadata": {}
+        },
+        "1329": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.remainder.raises_NothingToDo_when_no_hosts()",
+            "metadata": {}
+        },
+        "1330": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.dedupe.deduplication_not_performed()",
+            "metadata": {}
+        },
+        "1331": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.executor/Executor_.expand_calls.parameterize.always_generates_ConnectionCall_with_host_attr()",
+            "metadata": {}
+        },
+        "1332": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.group/SerialGroup_.executes_arguments_on_contents_run_serially()",
+            "metadata": {}
+        },
+        "1333": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.group/_make_serial_tester()",
+            "metadata": {}
+        },
+        "1334": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.main/Fab_.runtime_ssh_config_path.capital_F_flag_specifies_runtime_ssh_config_file()",
+            "metadata": {}
+        },
+        "1335": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.main/Fab_.runtime_ssh_config_path._run()",
+            "metadata": {}
+        },
+        "1336": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.main/Fab_.runtime_ssh_config_path.long_form_flag_also_works()",
+            "metadata": {}
+        },
+        "1337": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.main/Fab_.runtime_ssh_config_path.IOErrors_if_given_missing_file()",
+            "metadata": {}
+        },
+        "1338": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.main/Fab_.runtime_ssh_config_path.config_only_loaded_once_per_session()",
+            "metadata": {}
+        },
+        "1339": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.main/Fab_.secrets_prompts.password_prompt_updates_connect_kwargs()",
+            "metadata": {}
+        },
+        "1340": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.main/Fab_.secrets_prompts._expect_prompt()",
+            "metadata": {}
+        },
+        "1341": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.main/Fab_.secrets_prompts.passphrase_prompt_updates_connect_kwargs()",
+            "metadata": {}
+        },
+        "1342": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/_runner()",
+            "metadata": {}
+        },
+        "1343": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/_Connection()",
+            "metadata": {}
+        },
+        "1344": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.needs_handle_on_a_Connection()",
+            "metadata": {}
+        },
+        "1345": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.env.replaces_when_replace_env_True()",
+            "metadata": {}
+        },
+        "1346": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.env.augments_when_replace_env_False()",
+            "metadata": {}
+        },
+        "1347": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.calls_expected_paramiko_bits()",
+            "metadata": {}
+        },
+        "1348": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.writes_remote_streams_to_local_streams()",
+            "metadata": {}
+        },
+        "1349": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.return_value_is_Result_subclass_exposing_cxn_used()",
+            "metadata": {}
+        },
+        "1350": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.channel_is_closed_normally()",
+            "metadata": {}
+        },
+        "1351": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.channel_is_closed_on_body_exceptions()",
+            "metadata": {}
+        },
+        "1352": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.channel_close_skipped_when_channel_not_even_made()",
+            "metadata": {}
+        },
+        "1353": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.pty_True.uses_paramiko_get_pty_with_local_size()",
+            "metadata": {}
+        },
+        "1354": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.pty_True.no_SIGWINCH_means_no_handler()",
+            "metadata": {}
+        },
+        "1355": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.pty_True.SIGWINCH_handled_when_present()",
+            "metadata": {}
+        },
+        "1356": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.run.pty_True.window_change_handler_uses_resize_pty()",
+            "metadata": {}
+        },
+        "1357": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.start.sends_env_to_paramiko_update_environment_by_default()",
+            "metadata": {}
+        },
+        "1358": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.start.uses_export_prefixing_when_inline_env_is_True()",
+            "metadata": {}
+        },
+        "1359": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.runners/Remote_.kill_closes_the_channel()",
+            "metadata": {}
+        },
+        "1360": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.init.ssh_config._runtime_cxn()",
+            "metadata": {}
+        },
+        "1361": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.init.ssh_config._runtime_config()",
+            "metadata": {}
+        },
+        "1362": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.init.ssh_config.shows_result_of_lookup_when_loaded_config()",
+            "metadata": {}
+        },
+        "1363": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_local._forward_local()",
+            "metadata": {}
+        },
+        "1364": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/_select_result()",
+            "metadata": {}
+        },
+        "1365": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_local.forwards_local_port_to_remote_end()",
+            "metadata": {}
+        },
+        "1366": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_local.distinct_remote_port()",
+            "metadata": {}
+        },
+        "1367": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_local.non_localhost_listener()",
+            "metadata": {}
+        },
+        "1368": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_local.non_remote_localhost_connection()",
+            "metadata": {}
+        },
+        "1369": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_local._thread_error()",
+            "metadata": {}
+        },
+        "1370": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_local.tunnel_errors_bubble_up()",
+            "metadata": {}
+        },
+        "1371": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_local.tunnel_manager_errors_bubble_up()",
+            "metadata": {}
+        },
+        "1372": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_remote._forward_remote()",
+            "metadata": {}
+        },
+        "1373": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_remote.forwards_remote_port_to_local_end()",
+            "metadata": {}
+        },
+        "1374": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_remote.distinct_local_port()",
+            "metadata": {}
+        },
+        "1375": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_remote.non_localhost_connections()",
+            "metadata": {}
+        },
+        "1376": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.tests.connection/Connection_.forward_remote.remote_non_localhost_listener()",
+            "metadata": {}
+        },
+        "1377": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.transfer/Transfer.get()",
+            "metadata": {}
+        },
+        "1378": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.transfer/Result.__init__()",
+            "metadata": {}
+        },
+        "1379": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.transfer/Transfer.put()",
+            "metadata": {}
+        },
+        "1380": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.transfer/Transfer.is_remote_dir()",
+            "metadata": {}
+        },
+        "1381": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.executor/Executor.expand_calls()",
+            "metadata": {}
+        },
+        "1382": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.executor/Executor.parameterize()",
+            "metadata": {}
+        },
+        "1383": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.executor/Executor.normalize_hosts()",
+            "metadata": {}
+        },
+        "1384": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group.from_connections()",
+            "metadata": {}
+        },
+        "1385": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group.__init__()",
+            "metadata": {}
+        },
+        "1386": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group.run()",
+            "metadata": {}
+        },
+        "1387": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group._do()",
+            "metadata": {}
+        },
+        "1388": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group.sudo()",
+            "metadata": {}
+        },
+        "1389": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group.put()",
+            "metadata": {}
+        },
+        "1390": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group.get()",
+            "metadata": {}
+        },
+        "1391": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group.close()",
+            "metadata": {}
+        },
+        "1392": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/Group.__exit__()",
+            "metadata": {}
+        },
+        "1393": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/SerialGroup._do()",
+            "metadata": {}
+        },
+        "1394": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/GroupResult.__init__()",
+            "metadata": {}
+        },
+        "1395": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/ThreadingGroup._do()",
+            "metadata": {}
+        },
+        "1396": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/GroupResult.succeeded()",
+            "metadata": {}
+        },
+        "1397": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/GroupResult._bifurcate()",
+            "metadata": {}
+        },
+        "1398": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.group/GroupResult.failed()",
+            "metadata": {}
+        },
+        "1399": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.main/",
+            "metadata": {}
+        },
+        "1400": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.main/make_program()",
+            "metadata": {}
+        },
+        "1401": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.config/Config.from_v1()",
+            "metadata": {}
+        },
+        "1402": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.config/Config.__init__()",
+            "metadata": {}
+        },
+        "1403": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.config/Config.set_runtime_ssh_path()",
+            "metadata": {}
+        },
+        "1404": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.config/Config.load_ssh_config()",
+            "metadata": {}
+        },
+        "1405": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.config/Config._load_ssh_files()",
+            "metadata": {}
+        },
+        "1406": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.config/Config._load_ssh_file()",
+            "metadata": {}
+        },
+        "1407": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.config/Config.clone()",
+            "metadata": {}
+        },
+        "1408": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.runners/Remote.start()",
+            "metadata": {}
+        },
+        "1409": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.runners/Remote.send_start_message()",
+            "metadata": {}
+        },
+        "1410": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.runners/Remote.generate_result()",
+            "metadata": {}
+        },
+        "1411": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.runners/Result.__init__()",
+            "metadata": {}
+        },
+        "1412": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/opens()",
+            "metadata": {}
+        },
+        "1413": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.create_session()",
+            "metadata": {}
+        },
+        "1414": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.sudo()",
+            "metadata": {}
+        },
+        "1415": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.forward_local()",
+            "metadata": {}
+        },
+        "1416": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.run()",
+            "metadata": {}
+        },
+        "1417": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.shell()",
+            "metadata": {}
+        },
+        "1418": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.forward_remote()",
+            "metadata": {}
+        },
+        "1419": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.sftp()",
+            "metadata": {}
+        },
+        "1420": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection._remote_runner()",
+            "metadata": {}
+        },
+        "1421": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.from_v1()",
+            "metadata": {}
+        },
+        "1422": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.derive_shorthand()",
+            "metadata": {}
+        },
+        "1423": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.__init__()",
+            "metadata": {}
+        },
+        "1424": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.get_gateway()",
+            "metadata": {}
+        },
+        "1425": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.resolve_connect_kwargs()",
+            "metadata": {}
+        },
+        "1426": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.__eq__()",
+            "metadata": {}
+        },
+        "1427": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection._identity()",
+            "metadata": {}
+        },
+        "1428": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.__lt__()",
+            "metadata": {}
+        },
+        "1429": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.__hash__()",
+            "metadata": {}
+        },
+        "1430": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.open()",
+            "metadata": {}
+        },
+        "1431": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.open_gateway()",
+            "metadata": {}
+        },
+        "1432": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.__exit__()",
+            "metadata": {}
+        },
+        "1433": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection.close()",
+            "metadata": {}
+        },
+        "1434": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.connection/Connection",
+            "metadata": {}
+        },
+        "1435": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.tunnels/TunnelManager._run()",
+            "metadata": {}
+        },
+        "1436": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.tunnels/Tunnel.__init__()",
+            "metadata": {}
+        },
+        "1437": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.tunnels/Tunnel._run()",
+            "metadata": {}
+        },
+        "1438": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.tunnels/Tunnel.read_and_write()",
+            "metadata": {}
+        },
+        "1439": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/Session.__init__()",
+            "metadata": {}
+        },
+        "1440": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/Command.__init__()",
+            "metadata": {}
+        },
+        "1441": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/Session.generate_mocks()",
+            "metadata": {}
+        },
+        "1442": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/MockChannel.__init__()",
+            "metadata": {}
+        },
+        "1443": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/MockRemote.__init__()",
+            "metadata": {}
+        },
+        "1444": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/MockRemote.expect_sessions()",
+            "metadata": {}
+        },
+        "1445": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/MockRemote.start()",
+            "metadata": {}
+        },
+        "1446": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/MockRemote.stop()",
+            "metadata": {}
+        },
+        "1447": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/MockRemote.expect()",
+            "metadata": {}
+        },
+        "1448": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/MockSFTP.__init__()",
+            "metadata": {}
+        },
+        "1449": {
+            "URI": "fasten://PyPI!fabric$1.0/......packagesToBeAnalyzed.fabric.fabric.testing.base/MockSFTP.start()",
             "metadata": {}
         }
     }
