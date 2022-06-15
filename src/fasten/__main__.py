@@ -66,8 +66,6 @@ def main():
     for x in entry_points:
         list_of_nodes = DepthFirstSearch.depthFirstSearch(adjList, int(x), list_of_nodes)
 
-    list_of_nodes = DepthFirstSearch.depthFirstSearch(adjList, 0)
-
     OptimizeStitchedCallGraph.optimizeStitchedCallGraph(args, stitched_call_graph, list_of_nodes)
 #    StitchedCallGraphAnalyzer.analyzeStitchedCallGraph(stitched_call_graph)
 
