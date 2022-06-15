@@ -31,7 +31,7 @@ def main():
 
     url = 'https://api.fasten-project.eu/api/pypi/' # URL to the FASTEN API
     LCVurl = 'https://lima.ewi.tudelft.nl/lcv/'
-    
+
     forge = "local" # Source the product was downloaded from
     max_iter = -1 # Maximum number of iterations through source code (from pycg).
     operation = "call-graph" # or key-error for key error detection on dictionaries (from pycg).
@@ -48,7 +48,7 @@ def main():
     ################################ CALL GRAPHS - Michele - Retrieve and Generation in one function ##################
     # uncomment to use it 
     #call_graphs = collectingGeneratedAndRetrievedCallGraphs(args, all_pkgs, url)
-    
+
     call_graphs, cg_pkgs = RequestFasten.requestFasten(args, pkgs, url, "rcg")
     call_graphs = CreateCallGraph().createCallGraph(args, forge, max_iter, operation, call_graphs)
     vulnerabilities, vul_pkgs = RequestFasten.requestFasten(args, pkgs, url, "vulnerabilities")
