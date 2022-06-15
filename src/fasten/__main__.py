@@ -11,6 +11,8 @@ from fasten.optimizeStitchedCallGraph import OptimizeStitchedCallGraph
 from fasten.enrichCallGraph import EnrichCallGraph
 from fasten.stitchedCallGraphAnalyzer import StitchedCallGraphAnalyzer
 from fasten.createDirectories import CreateDirectories
+from executePypiResolver import ExecutePypiResolver
+import time
 
 
 def main():
