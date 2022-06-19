@@ -10,14 +10,12 @@ class RequestFasten:
     def requestFasten(args, pkgs, url, path):
 
         if path == "rcg":
-            print("Receive Call Graph from FASTEN:")
-        if path == "vulnerabilities":
-            print("Receive vulnerabilities from FASTEN:")
+            print("Receive Call Graphs from FASTEN:")
+        else:
+            print(f"Receive {path} from FASTEN:")
 
-        pkgs = json.loads(pkgs)
         metadata_JSON_File_Locations = [] # Call Graphs and metadata file location
-        cg_pkgs = { }
-        vul_pkgs = { }
+        meta_pkgs = { }
 
         for package in pkgs:
 
@@ -31,10 +29,7 @@ class RequestFasten:
                     metadata_JSON = response.json() # save in JSON format
 
                     if metadata_JSON:
-                        if path == "rcg":
-                            cg_pkgs[package] = pkgs[package]
-                        if path == "vulnerabilities":
-                            vul_pkgs[package] = pkgs[package]
+                        meta_pkgs[package] = pkgs[package]
 
                         with open(args.fasten_data + package + "." + path + ".json", "w") as f:
                             f.write(json.dumps(metadata_JSON)) # save Call Graph or metadata in a file
@@ -43,8 +38,6 @@ class RequestFasten:
 
                         print(package + ":" + pkgs[package] + ": " + path + " received.")
 
-#                    else:
-#                        print("Vulnerabilities are empty!")
 
                 elif response.status_code == 500:
                     print(package + ":" + pkgs[package] + ": " + path + " not available!")
@@ -59,7 +52,4 @@ class RequestFasten:
                 print('Connection timeout: ConnectError')
                 time.sleep(30)
 
-        if path == "rcg":
-            return metadata_JSON_File_Locations, cg_pkgs
-        if path == "vulnerabilities":
-            return metadata_JSON_File_Locations, vul_pkgs
+        return metadata_JSON_File_Locations, meta_pkgs
