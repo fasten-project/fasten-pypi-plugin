@@ -1,5 +1,6 @@
 import argparse
 import time
+import json
 from fasten.executePypiResolver import ExecutePypiResolver
 from fasten.readRequirementsFile import ReadRequirementsFile
 from fasten.checkPackageAvailability import CheckPackageAvailability
@@ -32,6 +33,8 @@ def main():
     forge = "local" # Source the product was downloaded from
     max_iter = -1 # Maximum number of iterations through source code (from pycg).
     operation = "call-graph" # or key-error for key error detection on dictionaries (from pycg).
+    local_package = {args.product: args.version}
+    local_package = json.dumps(local_package)
     call_graphs = []
     vulnerabilities = []
 
@@ -64,6 +67,7 @@ def main():
 
 
     OptimizeStitchedCallGraph.optimizeStitchedCallGraph(args, stitched_call_graph, list_of_nodes)
+    callables, callable_pkgs = RequestFasten.requestFasten(args, local_package, url, "callables")
 #    StitchedCallGraphAnalyzer.analyzeStitchedCallGraph(stitched_call_graph)
 
     for package in vul_pkgs:
