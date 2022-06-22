@@ -11,9 +11,9 @@ class ExecutePypiResolver:
 
         if os.path.exists(filename):
             os.remove(filename)
-            print("The previous "+filename+" has been deleted successfully")
-        else:
-            print("The file "+filename+" does not exist!")
+            #print("The previous "+filename+" has been deleted successfully")
+        #else:
+            # print("The file "+filename+" does not exist!")
 
         for i in package_list[1]:
 
@@ -22,6 +22,6 @@ class ExecutePypiResolver:
                 myfile.write(packageAndVersion)
 
         if (len(filename)) > 0:
-            print("The new " + filename + " has been created successfully")
+            #print("The new " + filename + " has been created successfully")
             time.sleep(20)
         return filename
