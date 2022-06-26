@@ -11,9 +11,9 @@ from fasten.findEntrypoints import FindEntrypoints
 from fasten.createAdjacencyList import CreateAdjacencyList
 from fasten.depthFirstSearch import DepthFirstSearch
 from fasten.optimizeStitchedCallGraph import OptimizeStitchedCallGraph
-from fasten.enrichCallGraph import EnrichCallGraph
 from fasten.stitchedCallGraphAnalyzer import StitchedCallGraphAnalyzer
 from fasten.createDirectories import CreateDirectories
+from fasten.enrichOSCG import EnrichOSCG
 
 
 def main():
@@ -66,8 +66,10 @@ def main():
         list_of_nodes = DepthFirstSearch.depthFirstSearch(adjList, int(x), list_of_nodes)
 
 
-    OptimizeStitchedCallGraph.optimizeStitchedCallGraph(args, stitched_call_graph, list_of_nodes)
-    callables, callable_pkgs = RequestFasten.requestFasten(args, local_package, url, "callables")
+    oscg = OptimizeStitchedCallGraph.optimizeStitchedCallGraph(args, stitched_call_graph, list_of_nodes)
+    callables, callable_pkgs = RequestFasten.requestFasten(args, local_package, url, "callables?limit=1000000")
+    EnrichOSCG.enrichOSCG(args, oscg, callables)
+
 #    StitchedCallGraphAnalyzer.analyzeStitchedCallGraph(stitched_call_graph)
 
     for package in vul_pkgs:
