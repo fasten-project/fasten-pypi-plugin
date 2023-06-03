@@ -14,6 +14,7 @@ def retrieveGitHubUrl(jsonResponse, packageName):
     url = ""
     response = json.dumps(jsonResponse)
     data = json.loads(response)
+
     if data['info']['home_page'] is not None:
         if packageName in data['info']['home_page']:
             if "https://github.com/" in data['info']['home_page']:
@@ -118,8 +119,9 @@ def ConvertToSPDX(License, LCVurl):
 
 def retrieveLicenseInformationFromPyPI(packageName, packageVersion, LCVurl):
 #    print("Querying PyPI.org APIs for license information:")
-    URL = "https://pypi.org/" + "pypi/" + packageName + "/" + packageVersion + "/json"
+    URL = "https://pypi.org/" + "pypi/" + str(packageName) + "/" + str(packageVersion) + "/json"
     PyPILicenseSPDX = ""
+    jsonResponse=""
     try:
         response = requests.get(url=URL)
         if response.status_code == 200:
