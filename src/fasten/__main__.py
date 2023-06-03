@@ -32,7 +32,7 @@ def main():
     args = parser.parse_args()
 
     url = 'https://api.fasten-project.eu/api/pypi/' # URL to the FASTEN API
-    LCVurl = 'https://lima.ewi.tudelft.nl/lcv/'
+    LCVurl = 'http://0.0.0.0:3251/'#'https://lima.ewi.tudelft.nl/lcv/'
     package_list = [ ] # Storage for package dictionaries.
     cg_location_list = [ ] # Storage for the location of the Call Graphs.
     local_package = {   "name": args.product,
