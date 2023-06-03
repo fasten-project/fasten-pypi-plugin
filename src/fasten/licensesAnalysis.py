@@ -51,17 +51,18 @@ def licensesAnalysis(args, package_list, url, LCVurl):#, oscg):
                 notCompatibleWithOutboundLicense = 1
                 full_report += license_report[i]["noLicensesIssues"]
             else:
-                full_report += "############# - License violation against the declared Outbound license, number " + str(i + 1) + " #################\n" + "\n" + str(license_report[i]["packageInformation"]) + "\n" + str(license_report[i]["licenseViolation"]) + "\n"
+                full_report += "\n\n############# - License violation against the declared Outbound license, number " + str(i + 1) + " #################\n" + "\n" + str(license_report[i]["packageInformation"]) + "\n" + str(license_report[i]["licenseViolation"]) + "\n"
     if len(transitive_license_report) > 0:
         #print("License violation found at the package level: " +str(len(license_report)) + " ." )
+        '''
         if notCompatibleWithOutboundLicense > 0:
             full_report += "\n\n############# -Since the project has license violations, the possible alternative outbound licenses: #############\n"
         else:
             full_report += "\n\n############# -The project is license compliant, anyway, possible alternative outbound licenses are: #############\n"
         for i in transitive_license_report:
-            full_report += i
-    if len(transitive_license_report) == 0:
-        full_report += "\n\n############# PyPI plugin couldn't detect any possible outbound license preventing the violation. #############\n"
+            full_report += i'''
+    #if len(transitive_license_report) == 0:
+        #full_report += "\n\n############# PyPI plugin couldn't detect any possible outbound license preventing the violation. #############\n"
     full_report += "\n\n############# - Licenses considered for the compliance verification: ############# \n"
     #print(license_declared_report)
     for i in license_declared_report:
