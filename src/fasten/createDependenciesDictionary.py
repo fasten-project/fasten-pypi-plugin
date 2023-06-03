@@ -15,7 +15,7 @@ class CreateDependenciesDictionary:
         for package in package_list:
             packageName = package["name"]
             packageVersion = package["version"]
-            URL = "https://pypi.org/" + "pypi/" + packageName + "/" + packageVersion + "/json"
+            URL = "https://pypi.org/" + "pypi/" + str(packageName) + "/" + str(packageVersion) + "/json"
             try:
                 response = requests.get(url=URL)  # get Call Graph or metadata for specified package
 
