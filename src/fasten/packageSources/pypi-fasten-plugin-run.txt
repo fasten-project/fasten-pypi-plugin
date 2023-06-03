@@ -1,0 +1,44 @@
+python3 __main__.py --product cookiecutter --project_path ./ --requirements packagesToBeAnalyzed/cookiecutter/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license BSD-3-Clause
+
+python3 __main__.py --product models --project_path ./ --requirements packagesToBeAnalyzed/models-master/official/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+# error in the Pypi resolver parsing the requirements.txt
+python3 __main__.py --product core --project_path ./ --requirements packagesToBeAnalyzed/core-dev/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+
+python3 __main__.py --product stable-diffusion-webui --project_path ./ --requirements packagesToBeAnalyzed/stable-diffusion-webui-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license AGPL-3.0
+
+
+python3 __main__.py --product manim --project_path ./ --requirements packagesToBeAnalyzed/manim-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+
+python3 __main__.py --product sherlock --project_path ./ --requirements packagesToBeAnalyzed/sherlock-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+
+# error in the Pypi resolver parsing the requirements.txt
+python3 __main__.py --product redash --project_path ./ --requirements packagesToBeAnalyzed/redash-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license BSD-2-Clause
+
+
+python3 __main__.py --product gpt4free --project_path ./ --requirements packagesToBeAnalyzed/gpt4free-main/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license GPL-3.0
+
+python3 __main__.py --product spaCy --project_path ./ --requirements packagesToBeAnalyzed/spaCy-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+python3 __main__.py --product selenium --project_path ./ --requirements packagesToBeAnalyzed/selenium-trunk/py/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+
+python3 __main__.py --product instapy --project_path ./ --requirements packagesToBeAnalyzed/InstaPy-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license GPL-3.0
+
+python3 __main__.py --product servo --project_path ./ --requirements packagesToBeAnalyzed/servo-master/python/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MPL-2.0
+
+python3 __main__.py --product novelai --project_path ./ --requirements packagesToBeAnalyzed/novelai-webui-aki-v3-main/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license AGPL-3.0
+
+python3 __main__.py --product whisper-for-low-vram --project_path ./ --requirements packagesToBeAnalyzed/whisper-for-low-vram-main/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+python3 __main__.py --product tornado --project_path ./ --requirements packagesToBeAnalyzed/tornado-master/maint/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+python3 __main__.py --product pyspider --project_path ./ --requirements packagesToBeAnalyzed/pyspider-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+python3 __main__.py --product Ultra_light_OCR_No_9 --project_path ./ --requirements packagesToBeAnalyzed/Ultra_light_OCR_No.9-main/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+# error with the pypi resolver
+python3 __main__.py --product capita_selecta_pix2code --project_path ./ --requirements packagesToBeAnalyzed/capita_selecta_pix2code-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
