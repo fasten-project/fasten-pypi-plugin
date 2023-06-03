@@ -17,22 +17,26 @@ class ReceiveLocallyLicensesInformation:
             licenses[i] = {}
             licenses[i]['packageName'] = package['name']
             licenses[i]['packageVersion'] = package['version']
-            PyPILicense, PyPILicenseSPDX, jsonResponse = retrieveLicenseInformationFromPyPI(package['name'], package['version'], LCVurl)
-            if len(PyPILicense) > 0:
-                licenses[i]['PyPILicense'] = PyPILicense
-            if len(PyPILicenseSPDX) > 0:
-                licenses[i]['PyPILicenseSPDX'] = PyPILicenseSPDX
-            GitHubURL = retrieveGitHubUrl(jsonResponse, package['name'])
-            if len(GitHubURL) > 0:
-                GitHubAPIurl = RetrieveGitHubAPIurl(GitHubURL)
-                if len(GitHubAPIurl) > 0:
-#                    print(GitHubAPIurl)
-                    GitHubLicense, GitHubLicenseSPDX = RetrieveLicenseFromGitHub(GitHubAPIurl, LCVurl)
-                    if GitHubLicense != "":
-                        if GitHubLicense is not None:
-                            licenses[i]['GitHubLicense'] = GitHubLicense
-                    if GitHubLicenseSPDX != "":
-                        if GitHubLicenseSPDX is not None:
-                            licenses[i]['GitHubLicenseSPDX'] = GitHubLicenseSPDX
+            if package['name'] and package['version'] is not None:
+                PyPILicense, PyPILicenseSPDX, jsonResponse = retrieveLicenseInformationFromPyPI(package['name'], package['version'], LCVurl)
+                if len(PyPILicense) > 0:
+                    licenses[i]['PyPILicense'] = PyPILicense
+                if len(PyPILicenseSPDX) > 0:
+                    licenses[i]['PyPILicenseSPDX'] = PyPILicenseSPDX
+                print(package['name'])
+                print(package['version'])
+                GitHubURL = retrieveGitHubUrl(jsonResponse, package['name'])
+                if GitHubURL is not None:
+                    if len(GitHubURL) > 0:
+                        GitHubAPIurl = RetrieveGitHubAPIurl(GitHubURL)
+                        if len(GitHubAPIurl) > 0:
+        #                    print(GitHubAPIurl)
+                            GitHubLicense, GitHubLicenseSPDX = RetrieveLicenseFromGitHub(GitHubAPIurl, LCVurl)
+                            if GitHubLicense != "":
+                                if GitHubLicense is not None:
+                                    licenses[i]['GitHubLicense'] = GitHubLicense
+                            if GitHubLicenseSPDX != "":
+                                if GitHubLicenseSPDX is not None:
+                                    licenses[i]['GitHubLicenseSPDX'] = GitHubLicenseSPDX
             i += 1
         return licenses
