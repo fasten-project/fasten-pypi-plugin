@@ -42,3 +42,30 @@ python3 __main__.py --product Ultra_light_OCR_No_9 --project_path ./ --requireme
 
 # error with the pypi resolver
 python3 __main__.py --product capita_selecta_pix2code --project_path ./ --requirements packagesToBeAnalyzed/capita_selecta_pix2code-master/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+
+python3 __main__.py --product pyjade --project_path ./ --requirements packagesToBeAnalyzed/pyjade/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license CC0-1.0
+
+python3 __main__.py --product python-rtmbot --project_path ./ --requirements packagesToBeAnalyzed/python-rtmbot/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+python3 __main__.py --product ramp --project_path ./ --requirements packagesToBeAnalyzed/ramp/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+python3 __main__.py --product grequests --project_path ./ --requirements packagesToBeAnalyzed/grequests/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license BSD-2-Clause
+
+python3 __main__.py --product shadow_useragent --project_path ./ --requirements packagesToBeAnalyzed/shadow_useragent/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+python3 __main__.py --product ClinicalTransformerNER --project_path ./ --requirements packagesToBeAnalyzed/ClinicalTransformerNER/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+python3 __main__.py --product SDoH_SODA --project_path ./ --requirements packagesToBeAnalyzed/SDoH_SODA/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+python3 __main__.py --product starter-pack-rasa-nlu --project_path ./ --requirements packagesToBeAnalyzed/starter-pack-rasa-nlu/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+python3 __main__.py --product SYAAD-MUSIC --project_path ./ --requirements packagesToBeAnalyzed/SYAAD-MUSIC/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+python3 __main__.py --product tensorflow --project_path ./ --requirements packagesToBeAnalyzed/tensorflow/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
+
+python3 __main__.py --product face_recognition --project_path ./ --requirements packagesToBeAnalyzed/face_recognition/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license MIT
+
+
+# https://github.com/search?q=path%3A**%2Frequirements.txt+&type=code&ref=advsearch
+# https://github.com/search?q=path%3A**%2F*requirements*.txt&type=code&ref=advsearch
