@@ -1,3 +1,11 @@
+sample-namespace-packages Apache-2.0
+
+OpenNRE MIT
+
+Dall-e	MIT
+
+OpenFernion Apache-2.0
+
 python3 __main__.py --product cookiecutter --project_path ./ --requirements packagesToBeAnalyzed/cookiecutter/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license BSD-3-Clause
 
 python3 __main__.py --product models --project_path ./ --requirements packagesToBeAnalyzed/models-master/official/requirements.txt --fasten_data callGraphs/ --scg_path callGraphs/ --spdx_license Apache-2.0
